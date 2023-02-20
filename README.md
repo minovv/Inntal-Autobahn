@@ -1,2 +1,2 @@
 # Inntal-Autobahn
-Inntal Autobahn - der Tribute Seite
+Inntal Autobahn A12 - der Tribute Seite
