@@ -7,7 +7,8 @@
         <meta name="application-name" content="Inntal A12 - der Tribute Seite">
         <meta name="keywords" content="A12 Autobahn, Tirol, Österreich">
         <meta name="author" content="MINOV Vitaliy">
-        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, 
+        minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <meta http-equiv="default-style" content="the document's preferred stylesheet">
@@ -22,13 +23,20 @@
         <meta name="theme-color" content="#ffffff">
 
         <style>
+            /* Using CSS Variables
+              A good way to use CSS variables is when it comes to the colors of the design.
+              Instead of copy and paste the same colors over and over again, I can place them in variables.
+              Below there is an example a variable with global scope, which is declared inside 
+              the :root selector.*/
             :root {
-                --text-color: green;
+                --text-color: black;
 
             }
 
-            p{
-                --text-color: black;
+            p {
+            /* In case I need to overwrite the setting I can simply uncomment the new color setting
+            below */
+            /* --text-color: blue; */
                 color: var(--text-color);
             }
         </style>
@@ -36,30 +44,39 @@
 </head>
 
 <body>
+    <nav>
+
+    </nav>
+
     <header>
-<h1>Autobahn A12, Tirol, Österreich</h1>
+        <h1>Autobahn A12, Tirol, Österreich</h1>
     </header>
-    <main>
-<div class="--text-color">
-    Willkommen auf der Seite über die Autobahn A12 im österreichischen Bundesland Tirol. Vitaliy Minov
-</div>
+
+<main>
+    <section>
+            <p>Willkommen auf der Seite über die Autobahn A12 im österreichischen Bundesland Tirol!</p>
+    </section>
+
+<hr>
+
 <section>
-<p>
-    Ich kam im Spätsommer 2019 zum ersten Mal nach Tirol. Ich war mit einem Arbeitgeber verabredet, der einen Job als
- Lkw-Fahrer für mich hatte. Ich reiste von Bulgarien über die Straßen von Serbien, Ungarn und Deutschland nach Österreich. 
-</p>
-<p>
-    Als ich schließlich von Bayern aus das Bundesland Tirol erreichte, war ich erstaunt über die Landschaft,
-    die sich entlang der gesamten Autobahn erstreckte wie die Kulisse eines Hollywoodfilms eines berühmten Regisseurs.
-</p>
+  <p>Ich kam im Spätsommer 2019 zum ersten Mal nach Tirol. Ich war mit einem Arbeitgeber verabredet, der einen Job 
+  als Lkw-Fahrer für mich hatte. Ich reiste von Bulgarien über die Straßen von Serbien, Ungarn und Deutschland 
+  nach Österreich.
+  </p>   
+
+  <p>Als ich schließlich von Bayern aus das Bundesland Tirol erreichte, war ich erstaunt über die Landschaft, 
+  ie sich entlang der gesamten Autobahn erstreckte wie die Kulisse eines Hollywoodfilms eines 
+  berühmten Regisseurs.
+  </p>
 </section>
+
 <details>
     <summary>Some Summary</summary>
-    <p>
-        Some details
-    </p>
+    <p>Some details</p>
 </details>
     </main>
+
     <footer>
         <address>
             <cite>MINOV Vitaliy</cite>
